@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 /* Fade-in-up animation */
@@ -70,22 +70,22 @@ body {
 
 /* Light subtle grid background */
 .bg-light-grid {
-  background-color: #F8FAFC;
+  background-color: #F2F2F2;
   background-image:
-    repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(0,0,0,0.03) 49px, rgba(0,0,0,0.03) 50px),
-    repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(0,0,0,0.03) 49px, rgba(0,0,0,0.03) 50px);
+    repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(38,38,38,0.04) 49px, rgba(38,38,38,0.04) 50px),
+    repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(38,38,38,0.04) 49px, rgba(38,38,38,0.04) 50px);
 }
 
 /* Marketing subtle dot-grid background */
 .bg-mkt-grid {
-  background-color: #FAFAFE;
-  background-image: radial-gradient(circle, rgba(139,92,246,0.06) 1px, transparent 1px);
+  background-color: #FFFFFF;
+  background-image: radial-gradient(circle, rgba(191,151,136,0.07) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
 /* Dark background with subtle grid pattern */
 .bg-dark-grid {
-  background-color: #0F172A;
+  background-color: #262626;
   background-image:
     repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(255,255,255,0.05) 49px, rgba(255,255,255,0.05) 50px),
     repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(255,255,255,0.05) 49px, rgba(255,255,255,0.05) 50px);

@@ -12,10 +12,10 @@ function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Left - Content */}
             <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#0F172A] mb-6 tracking-tight leading-tight opacity-0 animate-fade-in-up">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#262626] mb-6 tracking-tight leading-tight opacity-0 animate-fade-in-up">
                 {t('home.heroTitle')}
               </h1>
-              <p className="text-lg sm:text-xl text-[#475569] max-w-xl leading-relaxed opacity-0 animate-fade-in-up animate-stagger-1">
+              <p className="text-lg sm:text-xl text-[#4A4F59] max-w-xl leading-relaxed opacity-0 animate-fade-in-up animate-stagger-1">
                 {t('home.heroSubtitle')}
               </p>
             </div>
@@ -23,10 +23,10 @@ function Home() {
             {/* Right - Geometric 3D placeholder */}
             <div className="flex-1 flex justify-center opacity-0 animate-fade-in-up animate-stagger-2">
               <div className="relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
-                <div className="absolute inset-0 rounded-3xl bg-[#8B5CF6]/12 rotate-6 animate-float"></div>
-                <div className="absolute inset-4 rounded-3xl bg-[#06B6D4]/12 -rotate-3"></div>
-                <div className="absolute inset-8 rounded-3xl bg-[#8B5CF6]/6 rotate-2 flex items-center justify-center">
-                  <span className="font-mono text-6xl lg:text-8xl text-[#0F172A]/8 font-bold select-none">{'{ }'}</span>
+                <div className="absolute inset-0 rounded-3xl bg-[#5B7C99]/10 rotate-6 animate-float"></div>
+                <div className="absolute inset-4 rounded-3xl bg-[#BF9788]/10 -rotate-3"></div>
+                <div className="absolute inset-8 rounded-3xl bg-[#5B7C99]/5 rotate-2 flex items-center justify-center">
+                  <span className="font-mono text-6xl lg:text-8xl text-[#262626]/8 font-bold select-none">{'{ }'}</span>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@ function Home() {
             {/* Card 1 - Tuple Marketing */}
             <Link
               to="/marketing"
-              className="group relative overflow-hidden rounded-3xl p-8 lg:p-10 bg-[#8B5CF6] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/25 opacity-0 animate-fade-in-up animate-stagger-2"
+              className="group relative overflow-hidden rounded-3xl p-8 lg:p-10 bg-[#5B7C99] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#5B7C99]/25 opacity-0 animate-fade-in-up animate-stagger-2"
             >
               <div className="relative z-10">
                 <span className="text-4xl mb-4 block">📢</span>
@@ -66,7 +66,7 @@ function Home() {
             {/* Card 2 - Tuple Labs */}
             <Link
               to="/labs"
-              className="group relative overflow-hidden rounded-3xl p-8 lg:p-10 bg-[#06B6D4] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#06B6D4]/25 opacity-0 animate-fade-in-up animate-stagger-3"
+              className="group relative overflow-hidden rounded-3xl p-8 lg:p-10 bg-[#BF9788] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#BF9788]/25 opacity-0 animate-fade-in-up animate-stagger-3"
             >
               <div className="relative z-10">
                 <span className="text-4xl mb-4 block font-mono text-white/90">{'{ }'}</span>
@@ -94,7 +94,7 @@ function Home() {
       {/* Footer Text */}
       <section className="pb-20 lg:pb-28 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#475569] text-lg lg:text-xl leading-relaxed opacity-0 animate-fade-in-up animate-stagger-4">
+          <p className="text-[#4A4F59] text-lg lg:text-xl leading-relaxed opacity-0 animate-fade-in-up animate-stagger-4">
             {t('home.footerText')}
           </p>
         </div>

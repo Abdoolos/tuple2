@@ -44,19 +44,19 @@ function Labs() {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 tracking-tight leading-tight opacity-0 animate-fade-in-up">
                 {t('labs.heroTitle')}
               </h1>
-              <p className="text-[#CBD5E1] text-base lg:text-lg mb-3 leading-relaxed opacity-0 animate-fade-in-up animate-stagger-1">
+              <p className="text-[#B8BABF] text-base lg:text-lg mb-3 leading-relaxed opacity-0 animate-fade-in-up animate-stagger-1">
                 {t('labs.heroText1')}
               </p>
-              <p className="text-[#14B8A6] text-base lg:text-lg font-medium opacity-0 animate-fade-in-up animate-stagger-1">
+              <p className="text-[#BF9788] text-base lg:text-lg font-medium opacity-0 animate-fade-in-up animate-stagger-1">
                 {t('labs.heroText2')}
               </p>
             </div>
             <div className="flex-1 flex justify-center opacity-0 animate-fade-in-up animate-stagger-2">
               <div className="relative w-[280px] h-[280px] lg:w-[350px] lg:h-[350px]">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-teal-500/20 to-blue-500/20 rotate-6"></div>
-                <div className="absolute inset-4 rounded-3xl bg-gradient-to-br from-teal-500/15 to-blue-400/15 -rotate-3"></div>
-                <div className="absolute inset-8 rounded-3xl bg-[#1E293B] border border-white/10 flex items-center justify-center">
-                  <span className="font-mono text-5xl lg:text-7xl text-[#14B8A6]/40 font-bold select-none">{'{ }'}</span>
+                <div className="absolute inset-0 rounded-3xl bg-[#5B7C99]/15 rotate-6"></div>
+                <div className="absolute inset-4 rounded-3xl bg-[#BF9788]/10 -rotate-3"></div>
+                <div className="absolute inset-8 rounded-3xl bg-[#333333] border border-white/10 flex items-center justify-center">
+                  <span className="font-mono text-5xl lg:text-7xl text-[#BF9788]/30 font-bold select-none">{'{ }'}</span>
                 </div>
               </div>
             </div>
@@ -67,16 +67,16 @@ function Labs() {
       {/* Section 2 - Comparison Table (Light) */}
       <section className="py-16 lg:py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#0F172A] mb-10 text-center">{t('labs.compareTitle')}</h2>
-          <div className="scroll-reveal scroll-translate rounded-2xl border border-gray-200 overflow-hidden">
-            <div className="grid grid-cols-2 bg-gray-50 border-b border-gray-200">
-              <div className="px-6 py-4 text-sm font-bold text-[#64748B] uppercase tracking-wider">{t('labs.compareOther')}</div>
-              <div className="px-6 py-4 text-sm font-bold text-[#14B8A6] uppercase tracking-wider">{t('labs.compareTuple')}</div>
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-10 text-center">{t('labs.compareTitle')}</h2>
+          <div className="scroll-reveal scroll-translate rounded-2xl border border-[#E5E5E5] overflow-hidden">
+            <div className="grid grid-cols-2 bg-[#F2F2F2] border-b border-[#E5E5E5]">
+              <div className="px-6 py-4 text-sm font-bold text-[#B8BABF] uppercase tracking-wider">{t('labs.compareOther')}</div>
+              <div className="px-6 py-4 text-sm font-bold text-[#5B7C99] uppercase tracking-wider">{t('labs.compareTuple')}</div>
             </div>
             {comparisons.map((i) => (
-              <div key={i} className={`grid grid-cols-2 ${i < 4 ? 'border-b border-gray-100' : ''}`}>
-                <div className="px-6 py-4 text-[#475569] text-sm lg:text-base">{t(`labs.compare${i}Other`)}</div>
-                <div className="px-6 py-4 text-[#0F172A] text-sm lg:text-base font-medium bg-[#F0FDFA]">{t(`labs.compare${i}Tuple`)}</div>
+              <div key={i} className={`grid grid-cols-2 ${i < 4 ? 'border-b border-[#E5E5E5]' : ''}`}>
+                <div className="px-6 py-4 text-[#4A4F59] text-sm lg:text-base">{t(`labs.compare${i}Other`)}</div>
+                <div className="px-6 py-4 text-[#262626] text-sm lg:text-base font-medium bg-[#F5EBE7]/50">{t(`labs.compare${i}Tuple`)}</div>
               </div>
             ))}
           </div>
@@ -84,20 +84,20 @@ function Labs() {
       </section>
 
       {/* Section 3 - Services (Light) */}
-      <section className="py-16 lg:py-20 px-4 bg-[#F0FDFA]">
+      <section className="py-16 lg:py-20 px-4 bg-[#F2F2F2]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#0F172A] mb-10 text-center">{t('labs.servicesTitle')}</h2>
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-10 text-center">{t('labs.servicesTitle')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
-              <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate bg-white border border-[#E2E8F0] border-l-4 border-l-[#14B8A6] rounded-2xl p-6 hover:shadow-lg hover:border-[#14B8A6]/30 transition-all duration-300`}>
-                <div className="w-10 h-10 rounded-xl bg-[#14B8A6] flex items-center justify-center mb-4">
+              <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate bg-white border border-[#E5E5E5] border-l-4 border-l-[#5B7C99] rounded-2xl p-6 hover:shadow-lg hover:border-[#5B7C99] transition-all duration-300`}>
+                <div className="w-10 h-10 rounded-xl bg-[#5B7C99] flex items-center justify-center mb-4">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                 </div>
-                <h3 className="text-lg font-bold text-[#0F172A] mb-4">{t(`labs.svc${i}Title`)}</h3>
+                <h3 className="text-lg font-bold text-[#262626] mb-4">{t(`labs.svc${i}Title`)}</h3>
                 <ul className="space-y-2">
                   {[1, 2, 3].map((j) => (
-                    <li key={j} className="flex items-start gap-2 text-[#475569] text-sm">
-                      <span className="text-[#14B8A6] mt-0.5">•</span>
+                    <li key={j} className="flex items-start gap-2 text-[#4A4F59] text-sm">
+                      <span className="text-[#5B7C99] mt-0.5">•</span>
                       {t(`labs.svc${i}Item${j}`)}
                     </li>
                   ))}
@@ -114,11 +114,11 @@ function Labs() {
           <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-white mb-10 text-center">{t('labs.securityTitle')}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[1, 2, 3, 4].map((i) => (
-              <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate flex items-start gap-3 p-4 rounded-xl bg-[#1E293B] border border-white/10`}>
-                <span className="text-[#10B981] mt-0.5 flex-shrink-0">
+              <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate flex items-start gap-3 p-4 rounded-xl bg-[#333333] border border-white/10`}>
+                <span className="text-[#6B9B8C] mt-0.5 flex-shrink-0">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                 </span>
-                <p className="text-[#CBD5E1] text-sm lg:text-base">{t(`labs.sec${i}`)}</p>
+                <p className="text-[#B8BABF] text-sm lg:text-base">{t(`labs.sec${i}`)}</p>
               </div>
             ))}
           </div>
@@ -130,10 +130,10 @@ function Labs() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-white mb-8">{t('labs.ctaTitle')}</h2>
           <div className="scroll-reveal scroll-translate flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#" className="px-8 py-4 bg-[#14B8A6] hover:bg-[#5EEAD4] text-white font-bold rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#14B8A6]/30">
+            <a href="#" className="px-8 py-4 bg-[#5B7C99] hover:bg-[#4A6378] text-white font-bold rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#5B7C99]/30">
               → {t('labs.ctaBtn')}
             </a>
-            <a href="#" className="text-[#14B8A6] hover:text-[#5EEAD4] font-medium transition-colors">
+            <a href="#" className="text-[#BF9788] hover:text-[#A87E6E] font-medium transition-colors">
               → {t('labs.ctaLink')}
             </a>
           </div>
@@ -141,15 +141,15 @@ function Labs() {
       </section>
 
       {/* Footer (Dark) */}
-      <footer className="py-12 px-4 bg-[#0F172A] border-t border-white/10">
+      <footer className="py-12 px-4 bg-[#262626] border-t border-white/10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="flex items-center gap-2 text-lg font-bold text-white mb-1">
-              <span className="font-mono text-[#14B8A6]">{'{ }'}</span>
+              <span className="font-mono text-[#BF9788]">{'{ }'}</span>
               {t('labs.footerTitle')}
             </h3>
-            <p className="text-[#94A3B8] text-sm">{t('labs.footerEmail')}</p>
-            <p className="text-[#94A3B8] text-sm">{t('labs.footerLocation')}</p>
+            <p className="text-[#B8BABF] text-sm">{t('labs.footerEmail')}</p>
+            <p className="text-[#B8BABF] text-sm">{t('labs.footerLocation')}</p>
           </div>
         </div>
       </footer>
