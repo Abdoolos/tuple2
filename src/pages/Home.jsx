@@ -20,15 +20,14 @@ function Home() {
               </p>
             </div>
 
-            {/* Right - Geometric 3D placeholder */}
+            {/* Right - Hero Image */}
             <div className="flex-1 flex justify-center opacity-0 animate-fade-in-up animate-stagger-2">
-              <div className="relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
-                <div className="absolute inset-0 rounded-3xl bg-[#5B7C99]/10 rotate-6 animate-float"></div>
-                <div className="absolute inset-4 rounded-3xl bg-[#BF9788]/10 -rotate-3"></div>
-                <div className="absolute inset-8 rounded-3xl bg-[#5B7C99]/5 rotate-2 flex items-center justify-center">
-                  <span className="font-mono text-6xl lg:text-8xl text-[#262626]/8 font-bold select-none">{'{ }'}</span>
-                </div>
-              </div>
+              <img
+                src="/heroimage.png"
+                alt="Tuple - Systems for growth"
+                className="w-[280px] sm:w-[400px] lg:w-[520px] rounded-3xl object-contain animate-float select-none"
+                draggable="false"
+              />
             </div>
           </div>
         </div>

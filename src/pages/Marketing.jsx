@@ -58,13 +58,12 @@ function Marketing() {
               </div>
             </div>
             <div className="flex-1 flex justify-center opacity-0 animate-fade-in-up animate-stagger-2">
-              <div className="relative w-[280px] h-[280px] lg:w-[350px] lg:h-[350px]">
-                <div className="absolute inset-0 rounded-3xl bg-[#BF9788]/12 rotate-6"></div>
-                <div className="absolute inset-4 rounded-3xl bg-[#5B7C99]/10 -rotate-3"></div>
-                <div className="absolute inset-8 rounded-3xl bg-[#F5EBE7] flex items-center justify-center">
-                  <span className="text-6xl">📢</span>
-                </div>
-              </div>
+              <img
+                src="/1.png"
+                alt="Tuple Marketing - Brand & Growth"
+                className="w-[280px] lg:w-[400px] rounded-3xl object-contain shadow-lg select-none"
+                draggable="false"
+              />
             </div>
           </div>
         </div>
@@ -109,7 +108,8 @@ function Marketing() {
       {/* Section 4 - How we help */}
       <section className="py-16 lg:py-20 px-4 bg-[#F2F2F2]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-10 text-center">{t('mkt.helpTitle')}</h2>
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-4 text-center">{t('mkt.helpTitle')}</h2>
+          <p className="scroll-reveal scroll-translate text-[#4A4F59] text-center max-w-2xl mx-auto mb-10">{t('mkt.helpSub')}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
               <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate bg-white border border-[#E5E5E5] border-l-4 border-l-[#BF9788] rounded-2xl p-6 hover:shadow-lg hover:border-[#BF9788] transition-all duration-300`}>
@@ -127,10 +127,12 @@ function Marketing() {
       {/* Section 5 - CTA */}
       <section id="cta" className="py-16 lg:py-24 px-4 bg-[#F5EBE7]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-8">{t('mkt.ctaTitle')}</h2>
-          <a href="#" className="scroll-reveal scroll-translate inline-block px-10 py-4 bg-[#5B7C99] hover:bg-[#4A6378] text-white font-bold rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#5B7C99]/30">
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-4">{t('mkt.ctaTitle')}</h2>
+          <p className="scroll-reveal scroll-translate text-[#4A4F59] mb-8 max-w-xl mx-auto">{t('mkt.ctaSub')}</p>
+          <a href="#" className="scroll-reveal scroll-translate inline-block px-10 py-4 bg-[#5B7C99] hover:bg-[#4A6378] text-white font-bold rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#5B7C99]/30 mb-4">
             {t('mkt.ctaBtn')}
           </a>
+          <p className="scroll-reveal scroll-translate text-[#B8BABF] text-sm mt-4">{t('mkt.ctaSmall')}</p>
         </div>
       </section>
 

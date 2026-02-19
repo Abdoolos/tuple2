@@ -52,13 +52,13 @@ function Labs() {
               </p>
             </div>
             <div className="flex-1 flex justify-center opacity-0 animate-fade-in-up animate-stagger-2">
-              <div className="relative w-[280px] h-[280px] lg:w-[350px] lg:h-[350px]">
-                <div className="absolute inset-0 rounded-3xl bg-[#5B7C99]/15 rotate-6"></div>
-                <div className="absolute inset-4 rounded-3xl bg-[#BF9788]/10 -rotate-3"></div>
-                <div className="absolute inset-8 rounded-3xl bg-[#333333] border border-white/10 flex items-center justify-center">
-                  <span className="font-mono text-5xl lg:text-7xl text-[#BF9788]/30 font-bold select-none">{'{ }'}</span>
-                </div>
-              </div>
+              <img
+                src="/2.png"
+                alt="Tuple Labs - Engineering Lab"
+                className="w-[280px] lg:w-[400px] rounded-3xl object-contain select-none"
+                style={{boxShadow: '0 0 40px rgba(91, 124, 153, 0.3)'}}
+                draggable="false"
+              />
             </div>
           </div>
         </div>
@@ -86,7 +86,8 @@ function Labs() {
       {/* Section 3 - Services (Light) */}
       <section className="py-16 lg:py-20 px-4 bg-[#F2F2F2]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-10 text-center">{t('labs.servicesTitle')}</h2>
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-4 text-center">{t('labs.servicesTitle')}</h2>
+          <p className="scroll-reveal scroll-translate text-[#4A4F59] text-center max-w-2xl mx-auto mb-10">{t('labs.servicesSub')}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
               <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate bg-white border border-[#E5E5E5] border-l-4 border-l-[#5B7C99] rounded-2xl p-6 hover:shadow-lg hover:border-[#5B7C99] transition-all duration-300`}>
@@ -111,7 +112,8 @@ function Labs() {
       {/* Section 4 - Security (Dark) */}
       <section className="py-16 lg:py-20 px-4 bg-dark-grid">
         <div className="max-w-4xl mx-auto">
-          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-white mb-10 text-center">{t('labs.securityTitle')}</h2>
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-white mb-4 text-center">{t('labs.securityTitle')}</h2>
+          <p className="scroll-reveal scroll-translate text-[#B8BABF] text-center max-w-2xl mx-auto mb-10">{t('labs.securitySub')}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate flex items-start gap-3 p-4 rounded-xl bg-[#333333] border border-white/10`}>
@@ -125,16 +127,34 @@ function Labs() {
         </div>
       </section>
 
-      {/* Section 5 - CTA (Dark) */}
+      {/* Section 5 - Process */}
+      <section className="py-16 lg:py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-[#262626] mb-4 text-center">{t('labs.processTitle')}</h2>
+          <p className="scroll-reveal scroll-translate text-[#4A4F59] text-center max-w-2xl mx-auto mb-12">{t('labs.processSub')}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div key={i} className={`scroll-reveal scroll-delay-${i} scroll-translate text-center p-5 rounded-2xl bg-[#F2F2F2] border border-[#E5E5E5] hover:shadow-lg hover:border-[#5B7C99] transition-all duration-300`}>
+                <div className="w-10 h-10 rounded-full bg-[#5B7C99] text-white flex items-center justify-center mx-auto mb-3 text-sm font-bold">{i}</div>
+                <h3 className="text-base font-bold text-[#262626] mb-1">{t(`labs.process${i}Title`)}</h3>
+                <p className="text-[#4A4F59] text-sm">{t(`labs.process${i}Text`)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6 - CTA (Dark) */}
       <section className="py-16 lg:py-24 px-4 bg-dark-grid">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-white mb-8">{t('labs.ctaTitle')}</h2>
+          <h2 className="scroll-reveal scroll-translate text-2xl lg:text-4xl font-bold text-white mb-4">{t('labs.ctaTitle')}</h2>
+          <p className="scroll-reveal scroll-translate text-[#B8BABF] mb-8 max-w-xl mx-auto">{t('labs.ctaSub')}</p>
           <div className="scroll-reveal scroll-translate flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#" className="px-8 py-4 bg-[#5B7C99] hover:bg-[#4A6378] text-white font-bold rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#5B7C99]/30">
-              → {t('labs.ctaBtn')}
+              {t('labs.ctaBtn')}
             </a>
             <a href="#" className="text-[#BF9788] hover:text-[#A87E6E] font-medium transition-colors">
-              → {t('labs.ctaLink')}
+              {t('labs.ctaLink')}
             </a>
           </div>
         </div>
